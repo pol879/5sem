@@ -1,17 +1,18 @@
+# coding: utf-8
 import math
 class Shape():
-    def __init__(self, base, height): #base - ширина, height - высота
+    def __init__(self, base, height): #base - С€РёСЂРёРЅР°, height - РІС‹СЃРѕС‚Р°
         self.base=base
         self.height=height    
 class Triangle(Shape):
     def area(self, full=False):
         if full:
-            print('Площадь треугольника с шириной {}, высотой {}: '.format(self.base,self.height), self.base*self.height/2)
+            print('РџР»РѕС‰Р°РґСЊ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР° СЃ С€РёСЂРёРЅРѕР№ {}, РІС‹СЃРѕС‚РѕР№ {}: '.format(self.base,self.height), self.base*self.height/2)
         return self.base*self.height/2
 class Rectangle(Shape):
     def area(self, full=False):
         if full:
-            print('Площадь прямоугольника с шириной {}, высотой {}: '.format(self.base, self.height), self.base*self.height)
+            print('РџР»РѕС‰Р°РґСЊ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР° СЃ С€РёСЂРёРЅРѕР№ {}, РІС‹СЃРѕС‚РѕР№ {}: '.format(self.base, self.height), self.base*self.height)
         return self.base*self.height
 
 #Testing

@@ -1,11 +1,12 @@
+# coding: utf-8
 def write_array(array, file_name):
-    """записывает строки из array в файл file_name без циклов"""
+    """Р·Р°РїРёСЃС‹РІР°РµС‚ СЃС‚СЂРѕРєРё РёР· array РІ С„Р°Р№Р» file_name Р±РµР· С†РёРєР»РѕРІ"""
     with open(file_name, 'w') as f: 
         f.write('\n'.join(array))
     
 
 
-#код для проверки функции (не входит в задание)        
+#РєРѕРґ РґР»СЏ РїСЂРѕРІРµСЂРєРё С„СѓРЅРєС†РёРё (РЅРµ РІС…РѕРґРёС‚ РІ Р·Р°РґР°РЅРёРµ)        
 file_name='p.txt'
 array=['adg','djjjjj','csssssssssss','sjjjjjjddd']
 write_array(array,file_name)

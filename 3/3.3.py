@@ -1,8 +1,9 @@
-#файл с директориями называется 'result.txt'
+# coding: utf-8
+#С„Р°Р№Р» СЃ РґРёСЂРµРєС‚РѕСЂРёСЏРјРё РЅР°Р·С‹РІР°РµС‚СЃСЏ 'result.txt'
 import os
 
 def write_array(array, file_name):
-    """записывает строки из array в файл file_name без циклов"""
+    """Р·Р°РїРёСЃС‹РІР°РµС‚ СЃС‚СЂРѕРєРё РёР· array РІ С„Р°Р№Р» file_name Р±РµР· С†РёРєР»РѕРІ"""
     with open(file_name, 'w') as f: 
         f.write('\n'.join(array))
 

@@ -1,3 +1,4 @@
+# coding: utf-8
 class Animal():
     def __init__(self, name, age):
         self.name=name
@@ -8,17 +9,17 @@ class Zebra(Animal):
     __h='zebra'
     def get_description(self):
         return '''
-        Имя: {}
-        Возраст: {}
-        Кто я? -{}
+        РРјСЏ: {}
+        Р’РѕР·СЂР°СЃС‚: {}
+        РљС‚Рѕ СЏ? -{}
         '''.format(self.name, self.age, self.__h)
 class Dolphin(Animal):
     __h='dolphin'
     def get_description(self):
         return '''
-        Имя: {}
-        Возраст: {}
-        Кто я? -{}
+        РРјСЏ: {}
+        Р’РѕР·СЂР°СЃС‚: {}
+        РљС‚Рѕ СЏ? -{}
         '''.format(self.name, self.age, self.__h)
     
 test1=Zebra('test1', 1)

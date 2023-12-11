@@ -1,11 +1,11 @@
-
+# coding: utf-8
 def swap(f):
     '''swap unnamed inputs'''
     def wrapper(*args, **kwargs):
         res = f(*tuple(reversed(args)), **kwargs)
     return wrapper
 
-#пример для проверки
+#РїСЂРёРјРµСЂ РґР»СЏ РїСЂРѕРІРµСЂРєРё
 @swap
 def div(x, y, show=False):
     res = x / y

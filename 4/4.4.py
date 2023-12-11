@@ -1,3 +1,4 @@
+# coding: utf-8
 import time
 import os
 
@@ -13,11 +14,11 @@ def log(path):
                 tim = end-start
                 args_s=str(args)[1:-1]
                 s='''
-                Время вызова функции: {s}
-                Входящие аргументы:  {arg}
-                Ответ return: {answ}
-                Время завершения работы функции: {e}
-                Время работы функции: {time}'''.format(s=start, answ=answ, arg=args_s, e=end, time=tim)
+                Р’СЂРµРјСЏ РІС‹Р·РѕРІР° С„СѓРЅРєС†РёРё: {s}
+                Р’С…РѕРґСЏС‰РёРµ Р°СЂРіСѓРјРµРЅС‚С‹:  {arg}
+                РћС‚РІРµС‚ return: {answ}
+                Р’СЂРµРјСЏ Р·Р°РІРµСЂС€РµРЅРёСЏ СЂР°Р±РѕС‚С‹ С„СѓРЅРєС†РёРё: {e}
+                Р’СЂРµРјСЏ СЂР°Р±РѕС‚С‹ С„СѓРЅРєС†РёРё: {time}'''.format(s=start, answ=answ, arg=args_s, e=end, time=tim)
                 file.write(s)
         return wrapper
     return outer
@@ -28,7 +29,7 @@ path = os.getcwd()+'\\test.txt'
 
 @log(path)
 def f(a,b, res=True):
-    '''пробная функция'''
+    '''РїСЂРѕР±РЅР°СЏ С„СѓРЅРєС†РёСЏ'''
     time.sleep(0.5)
     if res:
         return a+b
